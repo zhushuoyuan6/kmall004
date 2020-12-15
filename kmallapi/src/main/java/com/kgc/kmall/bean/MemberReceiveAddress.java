@@ -1,6 +1,8 @@
 package com.kgc.kmall.bean;
 
-public class MemberReceiveAddress {
+import java.io.Serializable;
+
+public class MemberReceiveAddress implements Serializable {
     private Long id;
 
     private Long memberId;

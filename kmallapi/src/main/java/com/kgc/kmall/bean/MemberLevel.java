@@ -1,8 +1,9 @@
 package com.kgc.kmall.bean;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class MemberLevel {
+public class MemberLevel  implements Serializable {
     private Long id;
 
     private String name;
