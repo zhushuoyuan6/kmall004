@@ -1,5 +1,6 @@
 package com.kgc.kmall.swaggerdemo.controller;
 
+import com.kgc.kmall.swaggerdemo.pojo.ResultEntity;
 import com.kgc.kmall.swaggerdemo.pojo.User;
 import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
@@ -13,14 +14,14 @@ import java.util.List;
 public class UserController {
     @ApiOperation("新增用户接口")
     @PostMapping(value = "/add",produces = "application/json;charset=UTF-8")
-    public boolean add(@RequestBody @ApiParam(name = "user",value = "用户对象",required = true) User user){
-        return true;
+    public ResultEntity add(@RequestBody @ApiParam(name = "user",value = "用户对象",required = true) User user){
+        return ResultEntity.successWithoutData();
     }
     @ApiOperation("根据id删除用户")
     @GetMapping("/del")
     @ApiImplicitParam(name = "id",value = "用户id",required = true)
-    public boolean deleteById(int id){
-        return true;
+    public ResultEntity deleteById(int id){
+        return ResultEntity.successWithoutData();
     }
     @ApiOperation("动态查询用户并分页")
     @GetMapping("/select")
@@ -30,8 +31,8 @@ public class UserController {
             @ApiImplicitParam(name = "pageIndex",value="页码",required = false),
             @ApiImplicitParam(name = "pageSize",value="页面行数",required = false),
     })
-    public List<User> select(int id, String name, int pageIndex, int pageSize){
-        return new ArrayList<User>();
+    public ResultEntity select(int id, String name, int pageIndex, int pageSize){
+        return ResultEntity.successWithoutData(new ArrayList<User>());
     }
     @ApiOperation("根据id查询用户")
     @GetMapping("/getUserById")
