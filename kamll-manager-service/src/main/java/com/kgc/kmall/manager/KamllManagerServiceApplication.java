@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.kgc.kmall.manager.mapper")
-@EnableDubbo
+
 @SpringBootApplication
 public class KamllManagerServiceApplication {
 

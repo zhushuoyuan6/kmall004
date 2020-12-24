@@ -2,7 +2,7 @@ package com.kgc.kmall.bean;
 
 import java.io.Serializable;
 
-public class pmsProductSaleAttrValue implements Serializable {
+public class PmsProductSaleAttrValue implements Serializable {
     private Long id;
 
     private Long productId;
