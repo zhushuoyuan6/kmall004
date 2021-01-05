@@ -47,11 +47,11 @@ public class PmsSkuImage implements Serializable {
         this.imgUrl = imgUrl == null ? null : imgUrl.trim();
     }
 
-    public Long spuImgId() {
+    public Long getSpuImgId() {
         return spuImgId;
     }
 
-    public void spuImgId(Long spuImgId) {
+    public void setSpuImgId(Long spuImgId) {
         this.spuImgId = spuImgId;
     }
 

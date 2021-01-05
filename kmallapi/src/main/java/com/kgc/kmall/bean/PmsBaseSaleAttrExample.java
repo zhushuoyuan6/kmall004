@@ -1,9 +1,10 @@
 package com.kgc.kmall.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PmsBaseSaleAttrExample {
+public class PmsBaseSaleAttrExample implements Serializable{
     protected String orderByClause;
 
     protected boolean distinct;

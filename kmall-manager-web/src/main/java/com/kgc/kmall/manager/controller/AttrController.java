@@ -14,6 +14,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
+
 public class AttrController {
     @Reference
     AttrService attrService;

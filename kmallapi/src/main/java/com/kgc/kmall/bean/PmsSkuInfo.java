@@ -28,6 +28,14 @@ public class PmsSkuInfo implements Serializable {
 
     List<PmsSkuSaleAttrValue> skuSaleAttrValueList;
 
+    public Long getSpuId() {
+        return spuId;
+    }
+
+    public void setSpuId(Long spuId) {
+        this.spuId = spuId;
+    }
+
     public List<PmsSkuImage> getSkuImageList() {
         return skuImageList;
     }
@@ -58,14 +66,6 @@ public class PmsSkuInfo implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getProductId() {
-        return spuId;
-    }
-
-    public void setProductId(Long productId) {
-        this.spuId = productId;
     }
 
     public Double getPrice() {

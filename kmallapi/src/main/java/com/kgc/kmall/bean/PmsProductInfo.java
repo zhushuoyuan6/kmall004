@@ -13,8 +13,10 @@ public class PmsProductInfo implements Serializable {
     private Long catalog3Id;
 
     private Long tmId;
-    private List<PmsProductImage> spuImageList;
 
+    //spu图片列表
+    private List<PmsProductImage> spuImageList;
+    //spu销售属性列表
     private List<PmsProductSaleAttr> spuSaleAttrList;
 
     public List<PmsProductImage> getSpuImageList() {

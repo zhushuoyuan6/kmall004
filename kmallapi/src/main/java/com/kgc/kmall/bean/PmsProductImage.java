@@ -2,7 +2,7 @@ package com.kgc.kmall.bean;
 
 import java.io.Serializable;
 
-public class PmsProductImage implements Serializable {
+public class PmsProductImage implements Serializable{
     private Long id;
 
     private Long productId;
